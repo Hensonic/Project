@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head><title>RAM - ShopeeTech</title><link rel="stylesheet" href="style.css"></head>
+<body style="background: url('hi.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+margin: 0;
+
+">
+
+    <header><nav><a href="index.html" class="logo">Castillo Store</a>
+        <a href="index.html" class="navi">HOME</a>
+        <a href="ram.html" class="navi">RAM</a>
+        <a href="ssd.html" class="navi">SSD</a>
+        <a href="gpu.html" class="navi">GPU</a>
+        <a href="cpu.html" class="navi">CPU</a>
+        <a href="psu.html" class="navi">PSU</a>
+        <a href="contacts.html" class="navi">CONTACTS</a>
+        <a href="mother.html" class="navi">MOTHERBOARD</a>
+        <a href="gallery.html" class="navi">GALLERY</a>
+        <a href="about.html" class="navi">ABOUT</a>
+    </nav></header>
+    <div class="container">
+        <h2 class="category-title">High Speed Memory (RAM)</h2>
+     <div class="product-grid">
+
+    <!-- PRODUCT 1 -->
+    <div class="product-card">
+        <img src="ram.png">
+        <div class="p-info">
+            <div class="p-name">Corsair Vengeance LPX 16GB DDR4</div>
+            <div class="p-price">3500</div>
+
+            <button onclick="addToCart('Corsair Vengeance LPX 16GB DDR4',3500)">
+                Add to Cart
+            </button>
+
+            <button onclick="buyNow('Corsair Vengeance LPX 16GB DDR4',3500)">
+                Buy Now
+            </button>
+        </div>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="product-card">
+        <img src="ram.png">
+        <div class="p-info">
+            <div class="p-name">G.Skill Trident Z RGB 32GB</div>
+            <div class="p-price">8200</div>
+
+            <button onclick="addToCart('G.Skill Trident Z RGB 32GB',8200)">
+                Add to Cart
+            </button>
+
+            <button onclick="buyNow('G.Skill Trident Z RGB 32GB',8200)">
+                Buy Now
+            </button>
+        </div>
+    </div>
+
+</div>  
+
+<h3>Your Cart</h3>
+<ul id="cartList"></ul>
+<h4>Total: ₱<span id="total">0</span></h4>
+<button onclick="checkout()">Checkout</button>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
